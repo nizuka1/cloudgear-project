@@ -1,4 +1,4 @@
-    a {
+﻿    a {
      color: #708491;
      text-decoration: none;
      font-weight: bold;
@@ -7,4 +7,50 @@
 
     a:hover {
      color: #005f99;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .main-container {
+        width: 620px;
+        padding: 20px 4px 0px 4px;
+        margin-left: 40px;
+    }
+
+    body.allow-scroll {
+        overflow-x: auto; /* このページだけ横スクロール許可 */
+    }
+
+    main {
+        margin-left: 10px;
+        margin-top: 10px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            margin-left: 0;
+        }
+
+
+        iframe {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9;
+        }
+
+        .main-container {
+            width: 100%;
+            margin-left: 0;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .main-style {
+            margin-top: 10px;
+        }
     }

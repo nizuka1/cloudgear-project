@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CLOUDGEAR GAMES</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <style>
     body {
       font-family: sans-serif;
@@ -34,7 +34,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-      max-width: 400px;
+      max-width: 612px;
       margin-bottom: 40px;
     }
     .image-grid img {
@@ -42,12 +42,45 @@
       height: auto;
       display: block;
     }
+
+    .main-style {
+        margin-left: 10px; 
+        margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+        .image-grid {
+            grid-template-columns: 1fr; /* スマホでは1列に */
+            justify-items: center; /* 画像中央寄せ */
+        }
+
+        .image-grid img {
+            width: 90vw; /* スマホで画像幅を画面に合わせる */
+        }
+
+        iframe {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9;
+        }
+
+        .main-container {
+            width: 100%;
+            margin-left: 0;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .main-style {
+            margin-top: 10px;
+        }
+    }
   </style>
 </head>
 <body>
-  <div style="width: 620px; padding: 20px 4px 0px 4px; margin-left: 40px; text-align: left;">
+  <div class="main-container">
     <img src="resource/phantomancerlogo.png" alt="Phantomancer" style="width: 500px; height: auto;">
-    <main style="margin-left: 10px; margin-top: 10px;">
+    <main class=".main-style">
       <p>
       Phantomancerはファントムを召喚して戦うデッキ構築型ローグライクゲームです。<br>
       150種類以上あるカードとユニークなアップグレードを組み合わせて、あなただけのデッキを作りあげてください。<br>
