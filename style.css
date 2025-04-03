@@ -1,0 +1,10 @@
+    a {
+     color: #708491;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+    }
+
+    a:hover {
+     color: #005f99;
+    }
