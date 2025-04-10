@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <title>CLOUDGEAR PROJECT</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #141414;
+      color: #fff;
+      text-align: left;
+    }   
+    
+    a {
+      color: #00bfff; /* 明るいシアンブルー */
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #1ecfff;
+      text-decoration: underline;
+    }
+
+      .headline {
+          background-color: #8b0000;
+          padding: 6px 12px;
+          display: inline-block;
+          font-size: 1.2rem;
+          font-weight: bold;
+          border-radius: 4px;
+      }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <img src="resource/phantomancerlogo.png" alt="Phantomancer" style="width: 500px; height: auto;">
+    <main style="margin-left: 10px; margin-top: 10px;">
+        <p>
+            <h2 class="headline">ゲーム概要</h2><br>
+            <img src="resource/about/hitoyobu.png" class="responsive-img" style="margin-top: 10px; max-width: 200px;"><br>
+            主人公のヒトヨは、討伐対象の魔物を倒すための旅に出る。<br>
+            <img src="resource/about/Image Sequence_007_0000.png" class="responsive-img" style="margin-top: 10px;"><br>
+            戦闘はターン制で、カードを使って行う。<br>
+            カードは毎ターン山札から2枚引くことができる。<br>
+            このゲームの最大の特徴は、場に召喚すると毎ターン攻撃してくれる<b>『ファントム』</b>という存在だ。<br>
+            <img src="resource/about/Image Sequence_020_0000.jpg" class="responsive-img" style="margin-top: 10px;">
+        </p>
+        <p>
+            <h2 class="headline">ファントム</h2><br>
+            ファントムはカードを使って召喚する。<br>
+            <img src="resource/about/cardDes.png" class="responsive-img" style="margin-top: 10px; max-width: 300px; "><br>
+            召喚する際は、既に場に存在しているユニット（主人公や既に出したファントム）の前後や間など、どの位置に召喚するかを選択できる。
+            <img src="resource/phantom.gif" class="responsive-img" style="margin-top: 10px; max-width: 500px; "><br>
+            敵がどこに攻撃してくるかは予め表示されている。
+            例えば、通常攻撃であれば先頭、遠距離攻撃であれば最後尾へ攻撃してくる。
+            ファントムを「敵が攻撃してくる場所に配置して他のユニットを守る」か、
+            「敵が攻撃してこない場所に配置してダメージソースにする」か、適切な判断をすることが重要だ。
+        </p>
+        <p>
+            <h2 class="headline">スペル</h2><br>
+            スペルは使用すると即座に効果を発動し、捨て札に送られる。<br>
+            <img src="resource/about/Skill_5_ファイア.png" class="responsive-img" style="margin-top: 10px; max-width: 200px; display: inline-block;">
+            <img src="resource/about/Skill_1_輪廻.png" class="responsive-img" style="margin-top: 10px; max-width: 200px; display: inline-block;"><br>
+            山札がない状態でカードを引くと、手札に『輪廻』という特殊なスペルが生成される。
+            このゲームでは山札がなくなっても自動で捨て札のカードが回収されることはなく、回収には輪廻を使う必要がある。
+            輪廻はコストが必要でHPも失う為、山札のカードが少なすぎると不利になる。ただし、場合によっては少ないカードでデッキを回すことが有利になる場合もある。
+
+        </p>
+        <p>
+            <h2 class="headline">主人公</h2><br>
+            <img src="resource/about/hitoyo.jpg" class="responsive-img" style="margin-top: 10px; max-width: 300px; "><br>
+            主人公のヒトヨは、攻撃を受けるとまずシールドが削られ、シールドがなければHPにダメージを受ける。
+            シールドは戦闘終了後に回復する為、戦闘開始直後はヒトヨで攻撃を受けてファントムを守る選択が有効である場合が多い。
+            ヒトヨのHPが0になったらゲームオーバーとなり、再びプレイする時は最初からのスタートとなる。<br>
+        </p>
+        <p>
+            <h2 class="headline">ポーチ</h2><br>
+            <img src="resource/about/Image Sequence_010_0000.jpg" class="responsive-img" style="margin-top: 10px; max-width: 500px; "><br>
+            ポーチはこのゲーム独自のいつでも使用できるカードゾーンだ。
+            ポーチには道中で手に入った「上級ファントム」と「アイテム」を入れることができる。
+            ポーチに入れることのできるカードには上限枚数がある。（本編は9枚）<br>
+        </p>
+        <p>
+            <h2 class="headline">上級ファントム</h2><br>
+            「上級ファントム」は場のファントムをコストとして捨て札に送って召喚できるファントムだ。<br>
+            <img src="resource/about/AdvancedUnit_1_タシギ.png" class="responsive-img" style="margin-top: 10px; max-width: 200px; "><br>
+            左上の血のアイコンは、合計いくつのコストを持つファントムを捨て札にする必要があるかを示している。
+            上級ファントムは強力なステータスや効果を持ったものが多く、どういった戦略のデッキを組むかの中核となる。<br>
+        </p>
+        <p>
+            <h2 class="headline">アイテム</h2><br>
+            「アイテム」は使い切りのカードで、一度使用すると消滅してしまう。<br>
+            <img src="resource/about/Item_1_マリガン錠.png" class="responsive-img" style="margin-top: 10px; max-width: 200px; "><br>
+            アイテムはコストなしで使用できる。山札からの引きが悪い時や、もう一歩足りない時などに役に立ってくれるだろう。<br>
+            ポーチの上限枚数がある中で、上級ファントムとアイテムをそれぞれ何枚入れるのか、その選択はプレイヤーに委ねられている。
+        </p>
+        <p>
+            <h2 class="headline">ゲームモード</h2><br>
+            ゲームは『プロローグ』『本編』『ラン』の3種類がある。<br>
+            『プロローグ』ではゲームの基本的なルールを知ることができる。<br>
+            『本編』ではメインのステージを遊ぶことができる。<br>
+            『ラン』は本編を難しくしたモードで、全10段階の難易度が用意されている。<br>
+            ランの各レベルをクリアすることで、ショートストーリーを見ることができるぞ。<br>
+            <img src="resource/about/Image Sequence_016_0000.jpg" class="responsive-img" style="margin-top: 10px; max-width: 500px; ">
+        </p>
+        <p>
+            <h2 class="headline">Steamストアページ</h2><br>
+            <iframe src="https://store.steampowered.com/widget/3442280/" frameborder="0" width="646" height="190"></iframe>
+        </p>
+        <a href="phantomancer.html">Return</a>
+        </p>
+    </main>
+  </div>
+</body>
+</html>
